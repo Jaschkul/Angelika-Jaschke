@@ -1,0 +1,52 @@
+.navbar ul{
+    background-color: red;
+    list-style-type: none;
+    display: block; 
+    overflow: hidden; 
+}
+.navbar a{
+    text-decoration: none;
+    list-style-type: none; 
+    display: block;
+    color: black;   
+}
+.navbar a:hover{
+    background-color: white;
+}
+.navbar li{
+    text-decoration: none;
+    list-style-type: none;
+    float: left; 
+    padding: 10px; 
+    color: white;  
+}
+
+section{
+    float: left;
+    width: 30%;
+}
+
+aside{
+    float: left;
+    width: 40%;
+}
+
+article{
+    float: left;
+    width: 30%;
+}
+
+.gallerie{
+    display: inline-block; 
+    border: 1px solid black; 
+}
+.gallerie:hover{
+    border: 5px solid black; 
+}
+.gallerie .beschreibung{
+    text-align: center;
+}
+@media screen and (max-width: 600px){
+    main, aside, section, article{width:100%;
+    }
+}

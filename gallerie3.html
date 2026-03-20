@@ -22,12 +22,14 @@
     <main> 
        
       <!--Steuerungselement-->
-        <div id = "steuerungselement">
-            <a id = "zurück"> < </a>
-            <a> 1 </a>
-            <a >2</a>
-            <a id = "aktiv"> 3 </a>
-            <a id = "weiter"> > </a>
+        <div class = "steuerungselement">
+            <div class = "seiten">
+            <a href = gallerie1.html class = "seite"> 1 </a>
+            <a href = gallerie2.html class = "seite"> 2 </a>
+            <a href = gallerie3.html class = "seite"> 3 </a>
+            </div>
+            <button class = "davor" onclick = "seiteDavor()""> < </button> 
+            <button class = "danach" onclick = "seiteDanach()""> ></button>
         </div>
 
     </main>

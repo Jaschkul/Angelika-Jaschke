@@ -51,3 +51,28 @@ article{
     }
 }
 
+.diashow img{
+    display: none; 
+}
+
+img.bildAnzeige{
+    display: block; 
+    text-align: center;
+}
+
+.diashow button{
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgb(59, 56, 56);
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+}
+.davor{
+    left: 25%;
+}
+.danach{
+    right: 42%;
+}

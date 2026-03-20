@@ -21,10 +21,6 @@ function zeigeBild(index){
     else if(index <0 ){
         bildIndex = bilder.length -1;
     }
-    
-    //bildIndex = 0; 
-
-    //bildIndex = bilder.length -1;
 
     bilder.forEach(bild => {
         bild.classList.remove("bildAnzeige");
@@ -60,4 +56,3 @@ mehr.addEventListener("click", event => {
         mehr.textContent = "mehr";
     }
 });
-

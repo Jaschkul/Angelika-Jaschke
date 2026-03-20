@@ -46,11 +46,8 @@ article{
 .gallerie .beschreibung{
     text-align: center;
 }
-@media screen and (max-width: 600px){
-    main, aside, section, article{width:100%;
-    }
-}
 
+/*diashow*/
 .diashow img{
     display: none; 
 }
@@ -75,4 +72,25 @@ img.bildAnzeige{
 }
 .danach{
     right: 42%;
+}
+
+/*hier geht es jetzt um die Zitate*/
+.zitatShow p{
+    display: none;
+}
+
+p.zitatAnzeige{
+    display: block;
+    text-align: center;
+}
+
+.zitat{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+@media screen and (max-width: 600px){
+    aside, section, article{
+        width: 100%;
+    }
 }

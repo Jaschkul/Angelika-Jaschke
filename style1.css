@@ -1,5 +1,5 @@
 .navbar ul{
-    background-color: red;
+    background-color: tomato;
     list-style-type: none;
     display: block; 
     overflow: hidden; 
@@ -8,7 +8,7 @@
     text-decoration: none;
     list-style-type: none; 
     display: block;
-    color: black;   
+    color: blue;   
 }
 .navbar a:hover{
     background-color: white;
@@ -43,6 +43,25 @@ aside{
 .gallerie .beschreibung{
     text-align: center;
 }
+
+/* pagination in der Gallerie*/ 
+.steuerungselement{
+    text-align: center;
+    font-size: 25;
+}
+.steuerungselement a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.steuerungselement a.aktiv{
+    background-color: tomato;
+} 
+.steuerungselement a:hover:not(.aktiv){
+    background-color: lightgrey;
+}
+
 
 /*diashow*/
 .diashow img{

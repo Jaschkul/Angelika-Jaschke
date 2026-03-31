@@ -21,7 +21,14 @@
     color: white;  
 }
 
-/* background */
+/*arbeitet an der Vita */
+.vita{
+    margin: auto; 
+    padding: 50px;; 
+}
+
+
+/* layout */
 section {
     float: left; 
     width : 50%
@@ -29,6 +36,13 @@ section {
 aside{
     float: left;
     width: 50%;
+}
+footer{
+    display: block;
+    background-color: tomato;
+    clear: both;
+    text-align: center;
+    color: blue;
 }
 
 
@@ -63,9 +77,11 @@ aside{
 }
 
 
-/*diashow*/
+/*Eindrücke aus der Ausstellung*/
 .diashow img{
     display: none; 
+    margin: auto;
+    padding: 50px; 
 }
 
 img.bildAnzeige{

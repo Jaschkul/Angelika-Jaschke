@@ -40,19 +40,21 @@ function bildDanach(){
     zeigeBild(bildIndex);
 }
 
-// mehr infos 
-let mehr = document.getElementById("mehr");
-let infos = document.getElementById("infos");
+//mehr Infos anzeigen
+let vergangen = document.getElementById("vergangen");
+let vergangeneAusstellungen = document.getElementById("vergangeneAusstellungen");
 
-infos.style.display = "none";
+vergangeneAusstellungen.style.display = "none";
 
-mehr.addEventListener("click", event => {
-    if(mehr.textContent === "mehr"){
-        infos.style.display = "block";
-        mehr.textContent = "weniger";
+vergangen.addEventListener("click", event =>{
+    if(vergangen.textContent === "mehr"){
+    vergangeneAusstellungen.style.display ="block";
+    vergangen.textContent = "weniger";
     }
-    else{
-        infos.style.display = "none";
-        mehr.textContent = "mehr";
+    else if(vergangen.textContent === "weniger"){
+    vergangeneAusstellungen.style.display ="none";
+    vergangen.textContent = "mehr";
     }
-});
+})
+
+

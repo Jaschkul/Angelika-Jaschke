@@ -1,5 +1,5 @@
 .navbar ul{
-    background-color: tomato;
+    background-color: rgb(228, 165, 153);
     list-style-type: none;
     display: block; 
     overflow: hidden; 
@@ -39,7 +39,7 @@ aside{
 }
 footer{
     display: block;
-    background-color: tomato;
+    background-color:  rgb(228, 165, 153);;
     clear: both;
     text-align: center;
     color: blue;
@@ -87,23 +87,6 @@ footer{
 img.bildAnzeige{
     display: block; 
     text-align: center;
-}
-
-.diashow button{
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background-color: rgb(59, 56, 56);
-    color: white; 
-    border: none; 
-    cursor: pointer; 
-}
-.davor{
-    left: 25%;
-}
-.danach{
-    right: 42%;
 }
 
 /*hier geht es jetzt um die Zitate*/

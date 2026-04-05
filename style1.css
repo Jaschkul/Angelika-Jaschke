@@ -1,25 +1,25 @@
-.navbar ul{
-    background-color: rgb(228, 165, 153);
-    list-style-type: none;
-    display: block; 
-    overflow: hidden; 
+*{
+    font-family: sans-serif;
 }
+.navbar {
+    background-color: rgb(228, 165, 153);
+    overflow: hidden; 
+
+}
+
 .navbar a{
     text-decoration: none;
-    list-style-type: none; 
-    display: block;
-    color: blue;   
+    padding: 10px;
+}
+.navbar li{
+    list-style-type: none;
+    float: left;
+    padding: 10 px;
 }
 .navbar a:hover{
     background-color: white;
 }
-.navbar li{
-    text-decoration: none;
-    list-style-type: none;
-    float: left; 
-    padding: 10px; 
-    color: white;  
-}
+
 
 /*arbeitet an der Vita */
 .vita{
@@ -45,6 +45,12 @@ footer{
     color: blue;
 }
 
+.impressum{
+    list-style-type: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 /*bildauswahl in der Gallerie*/
 .gallerie{

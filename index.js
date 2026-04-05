@@ -1,44 +1,46 @@
-// diashow 
-
 const bilder = document.querySelectorAll(".bilder img");
-let bildIndex = 0; 
+let bilderIndex = 0; 
 let intervalId = null;
 
-// initialisierung
-initiatlsierung(); 
-function initiatlsierung(){
-    if(bilder.length > 0){
-    bilder[bildIndex].classList.add("bildAnzeige");
-    intervalId = setInterval(bildDanach, 5000);}
-}  
+//initalisierung 
+initalisierungBilder();
+function initalisierungBilder(){
+    bilder[bilderIndex].classList.add("zeigeBild"); //man muss das in CSS sichtbar machen
+    IntervalId = setInterval(bildDanach,7000); //erklären und if statement greater than 0
 
-// aktuelle Seite  
-function zeigeBild(index){
-    
-    if(index >=  bilder.length){
-        bildIndex = 0;
-    }
-    else if(index <0 ){
-        bildIndex = bilder.length -1;
-    }
-
-    bilder.forEach(bild => {
-        bild.classList.remove("bildAnzeige");
-    });
-    bilder[bildIndex].classList.add("bildAnzeige");
 }
 
-// Steuerung
+//zeigeBilder 
+function zeigeBilder(index){
+    
+    if(index >= bilder.length){
+        bilderIndex = 0; 
+    }
+    else if(index < 0){
+        bilderIndex = bild.length-1; 
+    }
+    
+    bilder.forEach(bild => {
+        bild.classList.remove("zeigeBild");
+    });
+    bilder[bilderIndex].classList.add("zeigeBild");
+    
+}
+//bildDavor 
 function bildDavor(){
     clearInterval(intervalId);
-    bildIndex --;
-    zeigeBild(bildIndex);
+    bilderIndex--;
+    zeigeBilder(bilderIndex);
+
+    
 }
+
+//bildDanach
 function bildDanach(){
-    clearInterval(intervalId);
-    bildIndex ++;
-    zeigeBild(bildIndex);
-}
+    bilderIndex++;
+    zeigeBilder(bilderIndex);
+    
+} 
 
 //mehr Infos anzeigen
 let vergangen = document.getElementById("vergangen");

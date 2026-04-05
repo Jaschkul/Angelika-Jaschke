@@ -84,15 +84,47 @@ footer{
 
 
 /*Eindrücke aus der Ausstellung*/
-.diashow img{
-    display: none; 
-    margin: auto;
-    padding: 50px; 
+.diashow{
+    position: relative;
+    width: 50%;
+    margin: center;
+    overflow: hidden
+}
+.bilder img{
+    width:100%;
+    display: none;
 }
 
-img.bildAnzeige{
-    display: block; 
+img.zeigeBild{
+    display: block;
+}
+
+.diashow button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white; 
+    border: none; 
+}
+
+.davor{
+    left: 0; 
+}
+.danach{
+    right:0;
+}
+
+
+
+/* button Ausstellungen*/
+#vergangen{
+    font-size: 16px;
+    padding: 10px;
     text-align: center;
+    margin: 10px 20% 50px;
+
 }
 
 /*hier geht es jetzt um die Zitate*/
